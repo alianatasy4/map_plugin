@@ -1,0 +1,57 @@
+[{
+    "title" : "@@userview.interactiveMap.config@@",
+    "properties" : [{
+        "name" : "id",
+        "label" : "Id",
+        "type" : "hidden"
+    },
+    {
+        "name" : "customId",
+        "label" : "@@userview.interactiveMap.customId@@",
+        "type" : "textfield",
+        "regex_validation" : "^[a-zA-Z0-9_]+$",
+        "validation_message" : "@@userview.interactiveMap.invalidId@@"
+    },
+    {
+        "name" : "label",
+        "label" : "@@userview.interactiveMap.label@@",
+        "type" : "textfield",
+        "required" : "True"
+    },
+    {
+        "name" : "title",
+        "label" : "@@userview.interactiveMap.title@@",
+        "type" : "textfield"
+    },
+    {
+        "name" : "lat",
+        "label" : "@@userview.interactiveMap.lat@@",
+        "type" : "textfield",
+        "required" : "True"
+    },
+    {
+        "name" : "lng",
+        "label" : "@@userview.interactiveMap.lng@@",
+        "type" : "textfield",
+        "required" : "True"
+    }
+    ]
+},
+{
+    "title" : "@@userview.interactiveMap.advanced@@",
+    "properties" : [
+    {
+        "name" : "zoom",
+        "label" : "@@userview.interactiveMap.zoom@@",
+        "type" : "textfield",
+        "required" : "True",
+        "value" : "13"
+    },
+    {
+        "name" : "maxZoom",
+        "label" : "@@userview.interactiveMap.maxZoom@@",
+        "type" : "textfield",
+        "required" : "True",
+        "value" : "20"
+    }]
+}]
